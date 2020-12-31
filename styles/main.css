@@ -450,6 +450,26 @@ li {
     width: 1.5rem;
     background-color: #313534;
 }
+
+.endsection {
+    font-size: 1.6rem;
+    font-weight: 300;
+    padding-top: 5rem;
+    text-align: center;
+}
+
+.endsection a {
+    font-size: 1.6rem;
+    font-weight: 300;
+    color: #3883ff;
+    
+}
+
+.endsection a:hover {
+    font-size: 1.6rem;
+    font-weight: 300;
+    color: #2f67cd;
+}
 /* End Timeline */
 
 /* Start contact form */
