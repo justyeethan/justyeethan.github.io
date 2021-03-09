@@ -37,6 +37,16 @@ img {
   width: 100%;
   border-radius: 10%;
 }
+
+#particles-js {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  text-align: center;
+  z-index: -1;
+}
 /* End Global */
 
 /* Start Reusable */
@@ -173,45 +183,19 @@ li {
 }
 
 .menu-toggler:hover {
-    animation: emptyAnimation;
-    animation-play-state: paused;
-}
-
-.menu-toggler:hover .clickme {
-    visibility: visible;
-    opacity: 1;
-}
-
-.menu-toggler .clickme {
-  visibility: hidden;
-  width: 100px;
-  background-color: black;
-  color: #fff;
-  text-align: center;
-  border-radius: 6px;
-  padding: 5px 0;
-  position: absolute;
-  z-index: 1;
-  bottom: 100%;
-  left: -50%;
-  margin-left: -60px;
-  font-size: 15px;
-  
-  /* Fade in tooltip - takes 1 second to go from 0% to 100% opac: */
-  opacity: 0;
-  transition: opacity 1s;
-}
-
-.menu-toggler.open .clickme {
-    animation: rot .8s;
-    transform: rotate(45deg);
-    opacity: 0;
+  animation: emptyAnimation;
+  animation-play-state: paused;
 }
 
 @keyframes rot {
-    0% { transform: rotate(0); }
-    100% { transform: rotate(45deg); }
+  0% {
+      transform: rotate(-45deg);
+  }
+  70% {
+      transform: rotate(45deg);
+  }
 }
+/* End header */
 
 /* Start animations */
 @keyframes navbar_pulse {
@@ -226,10 +210,12 @@ li {
   }
 }
 
-@keyframes emptyAnimation {}
+@keyframes emptyAnimation {
+}
 
 .menu-toggler.open {
   transform: rotate(-45deg);
+  animation: emptyAnimation;
 }
 
 .bar {
