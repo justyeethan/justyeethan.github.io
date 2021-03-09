@@ -160,6 +160,7 @@ li {
 
 .menu-toggler {
     position: fixed;
+    border-radius: 50px;
     top: 5rem;
     right: 5rem;
     width: 5rem;
@@ -170,6 +171,7 @@ li {
     cursor: pointer;
     z-index: 1500;
     transition: transform 650ms ease-out;
+    /*animation: pulse 2s infinite;*/
 }
 
 .menu-toggler.open {
