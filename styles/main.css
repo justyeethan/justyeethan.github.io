@@ -169,8 +169,64 @@ li {
   cursor: pointer;
   z-index: 1500;
   transition: transform 650ms ease-out;
-  /*animation: pulse 2s infinite;*/
+  animation: navbar_pulse 1.2s linear infinite;
 }
+
+.menu-toggler:hover {
+    animation: emptyAnimation;
+    animation-play-state: paused;
+}
+
+.menu-toggler:hover .clickme {
+    visibility: visible;
+    opacity: 1;
+}
+
+.menu-toggler .clickme {
+  visibility: hidden;
+  width: 100px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 100%;
+  left: -50%;
+  margin-left: -60px;
+  font-size: 15px;
+  
+  /* Fade in tooltip - takes 1 second to go from 0% to 100% opac: */
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+.menu-toggler.open .clickme {
+    animation: rot .8s;
+    transform: rotate(45deg);
+    opacity: 0;
+}
+
+@keyframes rot {
+    0% { transform: rotate(0); }
+    100% { transform: rotate(45deg); }
+}
+
+/* Start animations */
+@keyframes navbar_pulse {
+  0% {
+    background-color: rgba(87, 126, 253, 0.99);
+    box-shadow: 0 0 0 0 rgba(87, 126, 253, 0.99);
+  }
+
+  70% {
+    background-color: rgba(253, 87, 191, 0);
+    box-shadow: 0 0 0 4rem rgba(253, 87, 191, 0);
+  }
+}
+
+@keyframes emptyAnimation {}
 
 .menu-toggler.open {
   transform: rotate(-45deg);
