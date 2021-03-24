@@ -1,494 +1,413 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Ethan Yee</title>
 
-    <!-- AOS Functionality -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-    <!-- Fonts -->
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
-      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
-      crossorigin="anonymous"
-    />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Langar&family=Poppins&family=Roboto&display=swap"
-      rel="stylesheet"
-    />
-    <!-- Styles imports -->
-    <link href="styles/main.css" rel="stylesheet" />
-    <!-- CDN for typed.js -->
-    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
-  </head>
-  <body>
-    <!-- Navbar -->
-    <div id="progressbar"></div>
-    <div id="scrollPath"></div>
-    <header>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ethan Yee</title>
+
+  <!-- AOS Functionality -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <!-- Fonts -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+    integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Langar&family=Poppins&family=Roboto&display=swap"
+    rel="stylesheet" />
+  <!-- Styles imports -->
+  <link href="styles/main.css" rel="stylesheet" />
+  <!-- CDN for typed.js -->
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+</head>
+
+<body>
+  <!-- Navbar -->
+  <div id="progressbar"></div>
+  <div id="scrollPath"></div>
+  <header>
       <div class="menu-toggler">
         <div class="bar half start"></div>
         <div class="bar"></div>
         <div class="bar half end"></div>
       </div>
-      <nav class="top-nav">
-        <ul class="nav-list">
-          <li>
-            <a href="#" class="nav-link">Home</a>
-          </li>
-          <li>
-            <a href="#about" class="nav-link">About</a>
-          </li>
-          <li>
-            <a href="#skills" class="nav-link">Skills</a>
-          </li>
-          <li>
-            <a href="#portfolio" class="nav-link">Portfolio</a>
-          </li>
-          <li>
-            <a href="#experience" class="nav-link">Experience</a>
-          </li>
-          <!--
+    <nav class="top-nav">
+      <ul class="nav-list">
+        <li>
+          <a href="#" class="nav-link">Home</a>
+        </li>
+        <li>
+          <a href="#about" class="nav-link">About</a>
+        </li>
+        <li>
+          <a href="#skills" class="nav-link">Skills</a>
+        </li>
+        <li>
+          <a href="#portfolio" class="nav-link">Portfolio</a>
+        </li>
+        <li>
+          <a href="#experience" class="nav-link">Experience</a>
+        </li>
+        <!--
           <li>
             <a href="#contact" class="nav-link">Contact</a>
           </li>
       -->
-        </ul>
-      </nav>
-      <div id="particles-js">
-      </div>
-        <div class="landing-text">
-          <h1>Ethan Yee</h1>
-          <h6>I am a <span class="typed"></span></h6>
-        </div>
-    </header>
+      </ul>
+    </nav>
+    <div id="particles-js">
+    </div>
+    <div class="landing-text">
+      <h1>Ethan Yee</h1>
+      <h6>I am a <span class="typed"></span></h6>
+    </div>
+  </header>
 
-    <section class="about" id="about">
-      <div class="container">
-        <div class="profile-img" data-aos="fade-right" data-aos-delay="300">
-          <img
-            src="images/profilepic.jpg"
-            alt=""
-            style="transform: rotateY(-180deg)"
-          />
-        </div>
-        <div class="about-details" data-aos="fade-left" data-aos-delay="600">
-          <div class="about-heading">
-            <h1>About</h1>
-            <h6>Myself</h6>
-          </div>
-          <p>
-            I am a university student studying Applied Computing in Data Science
-            at the University of Washington, Bothell campus. My passion is to
-            work with extremely talented people and collaborate to make products
-            that help others and make their lives easier through programming. I
-            love solving difficult problems with code and working on interesting
-            projects I want to pursue.
-            <br /><br />
-            My main language is Python, and I have been working on projects that
-            I want to solve using Python and it's absurd amount of modules and
-            packages, and I want to continue to pursue a career using Python and
-            automation tools to help deliver a better product.
-          </p>
-          <div class="social-media">
-            <ul class="nav-list">
-              <li>
-                <a
-                  href="https://www.linkedin.com/in/ethan-yee/"
-                  target="_blank"
-                  class="icon-link"
-                >
-                  <i class="fab fa-linkedin"></i>
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://github.com/justyeethan"
-                  target="_blank"
-                  class="icon-link"
-                >
-                  <i class="fab fa-github-square"></i>
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
+  <section class="about" id="about">
+    <div class="container">
+      <div class="profile-img" data-aos="fade-right" data-aos-delay="300">
+        <img src="images/profilepic.jpg" alt="" style="transform: rotateY(-180deg)" />
       </div>
-    </section>
-
-    <section class="skills" id="skills">
-      <div class="container">
-        <div class="section-heading">
-          <h1>Skills</h1>
-          <h6>What I can do for you</h6>
+      <div class="about-details" data-aos="fade-left" data-aos-delay="600">
+        <div class="about-heading">
+          <h1>About</h1>
+          <h6>Myself</h6>
         </div>
-        <div class="my-skills">
-          <div class="skill" data-aos="fade-in" data-aos-delay="300">
-            <div class="icon-container">
-              <i class="fas fa-database"></i>
-            </div>
-            <h1>Database Management</h1>
-            <p>
-              I have knowledge of proper database handling and SQL, and I've
-              working with SQLite3 and SQLAlchemy. I also have advanced skills
-              in Excel, Python and Pandas.
-            </p>
-          </div>
-          <div class="skill" data-aos="fade-in" data-aos-delay="600">
-            <div class="icon-container">
-              <i class="fas fa-code"></i>
-            </div>
-            <h1>Web Development</h1>
-            <p>
-              I am confident in React.js, HTML, CSS, Javascript, Flask, SQL, and
-              Django. I am currently a fullstack developer at SEAL, and I
-              currently work with GraphQL, React.js and AWS Amplify.
-            </p>
-          </div>
-          <div class="skill" data-aos="fade-in" data-aos-delay="900">
-            <div class="icon-container">
-              <i class="fas fa-chart-area"></i>
-            </div>
-            <h1>Data Visualization & Communication</h1>
-            <p>
-              I am skilled in Matplotlib and explaining concepts. I have
-              experience in a professional setting doing just that as a student
-              assistant at UW Bothell.
-            </p>
-          </div>
-          <div class="skill" data-aos="fade-in" data-aos-delay="1100">
-            <div class="icon-container">
-              <i class="fas fa-table"></i>
-            </div>
-            <h1>Data Analysis & Statistics</h1>
-            <p>
-              I have professional experience with data analytics and performing
-              key concepts in statistics. I have been able to work on other
-              projects in stock trading and trend analysis.
-            </p>
-          </div>
-          <div class="skill" data-aos="fade-in" data-aos-delay="1400">
-            <div class="icon-container">
-              <i class="fas fa-terminal"></i>
-            </div>
-            <h1>Unix GNU/Linux</h1>
-            <p>
-              I have experience in *Nix environments, including Arch, Debian,
-              and LFS (Linux From Scratch). I have 2 years of experience running
-              Debian and Arch Linux on a personal and professional level.
-            </p>
-          </div>
-          <div class="skill" data-aos="fade-in" data-aos-delay="1700">
-            <div class="icon-container">
-              <i class="fab fa-python"></i>
-            </div>
-            <h1>Python</h1>
-            <p>
-              I have worked with Python since 5th grade, and my best language. I
-              also have working experience as a Student Assistant managing
-              hordes of data using Python modules like Pandas and Matplotlib.
-            </p>
-          </div>
-          <div class="skill" data-aos="fade-in" data-aos-delay="1800">
-            <div class="icon-container">
-              <i class="fab fa-java"></i>
-            </div>
-            <h1>Java</h1>
-            <p>
-              I have used Java since 10th grade, and I've been using it to build
-              and developing basic android apps and other programs. I have also
-              take courses through my university to learn the intermediate
-              functions of Java.
-            </p>
-          </div>
-          <div class="skill" data-aos="fade-in" data-aos-delay="2000">
-            <div class="icon-container">
-              <i class="fab fa-react"></i>
-            </div>
-            <h1>React.js</h1>
-            <p>
-              I proficient in React.js, and I have worked with it professionally
-              at the Sensors, Energy and Automation Laboratory. I am fairly new
-              with using React, but I have picked it up fairly quickly from the
-              start of the quarter.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="portfolio" id="portfolio">
-      <div class="container">
-        <div class="section-heading">
-          <h1>Portfolio</h1>
-          <h6>View some of my recent work and clubs</h6>
-        </div>
-        <div class="portfolio-item">
-          <div
-            class="portfolio-description has-margin-right"
-            data-aos="fade-right"
-            data-aos-delay="600"
-          >
-            <h6>Software Engineer</h6>
-            <h1>TrickFire Robotics</h1>
-            <p>
-              Trickfire Robotics is a club at the University of Washington,
-              Bothell, competing in the NASA Robotics Mining competition. I have
-              helped create helper methods in Python and c++ and I aided in side
-              projects that we have.
-            </p>
-            <a
-              href="https://www.uwb.edu/news/october-2019/trickfire-robotics"
-              target="_blank"
-              class="cta"
-              >View Details</a
-            >
-          </div>
-          <div class="portfolio-img" data-aos="fade-left" data-aos-delay="300">
-            <img src="images/portfolioimg1.jpg" alt="" />
-          </div>
-        </div>
-        <div class="portfolio-item">
-          <div
-            class="portfolio-img has-margin-right"
-            data-aos="fade-right"
-            data-aos-delay="600"
-          >
-            <img src="images/portfoliobg5.png" alt="" />
-          </div>
-          <div
-            class="portfolio-description"
-            data-aos="fade-left"
-            data-aos-delay="300"
-          >
-            <h6>Video Game Development</h6>
-            <h1>Technology Student Association (TSA)</h1>
-            <p>
-              I was a competitor at TSA and most notably, my team placed top 5
-              several times in Video Game Development and other technology-based
-              competitions on a state and a national level.
-            </p>
-            <a
-              href="https://www.kirklandreporter.com/news/lwsd-students-place-at-state-technology-student-association-conference/"
-              target="_blank"
-              class="cta"
-              >View Details</a
-            >
-          </div>
-        </div>
-        <div class="portfolio-item">
-          <div
-            class="portfolio-description has-margin-right"
-            data-aos="fade-right"
-            data-aos-delay="300"
-          >
-            <h6>Fullstack Development</h6>
-            <h1>FoodWithFriendz Web App</h1>
-            <p>
-              I created a web application using Flask and Jinja2, and created a
-              app that allows users to find places to eat with their friends in
-              an interactive UI that is as simple as Tinder and using with my
-              own custom ranking algorithm.
-            </p>
-            <a
-              href="https://github.com/justyeethan/FoodWithFriends"
-              target="_blank"
-              class="cta"
-              >View Details</a
-            >
-          </div>
-          <div class="portfolio-img" data-aos="fade-left" data-aos-delay="600">
-            <img src="images/portfolioimg2.jpg" alt="" />
-          </div>
-        </div>
-        <div class="portfolio-item">
-          <div
-            class="portfolio-img has-margin-right"
-            data-aos="fade-right"
-            data-aos-delay="300"
-          >
-            <img src="images/portfolioimg3.jpg" alt="" />
-          </div>
-          <div
-            class="portfolio-description"
-            data-aos="fade-left"
-            data-aos-delay="600"
-          >
-            <h6>Algorithms and Data Structures</h6>
-            <h1>Sudoku Solver</h1>
-            <p>
-              I created a sudoku solver that solves a random sudoku board using
-              Java and the A* backtracking algorithm.
-            </p>
-            <a
-              href="https://github.com/justyeethan/SudokuSolver"
-              target="_blank"
-              class="cta"
-              >View Details</a
-            >
-          </div>
-        </div>
-        <div class="portfolio-item">
-          <div
-            class="portfolio-description has-margin-right"
-            data-aos="fade-right"
-            data-aos-delay="300"
-          >
-            <h6>Web Development</h6>
-            <h1>ToDo App</h1>
-            <p>
-              I created a web application using Flask and Jinja2, and created a
-              simple authenticated Todo app that lets users sign into their
-              account and add things to their todo list.
-            </p>
-            <a
-              href="https://github.com/justyeethan/TodoAppW-Authentication"
-              target="_blank"
-              class="cta"
-              >View Details</a
-            >
-          </div>
-          <div class="portfolio-img" data-aos="fade-left" data-aos-delay="600">
-            <img src="images/portfolioimg4.jpg" alt="" />
-          </div>
-        </div>
-        <div class="portfolio-item">
-          <div
-            class="portfolio-img has-margin-right"
-            data-aos="fade-right"
-            data-aos-delay="600"
-          >
-            <img src="images/saf.jpg" alt="" />
-          </div>
-          <div
-            class="portfolio-description"
-            data-aos="fade-left"
-            data-aos-delay="300"
-          >
-            <h6>Student Representative</h6>
-            <h1>Services and Activities Fee</h1>
-            <p>
-              Created a program to determine the services with the most impact
-              using Natural Language processing and time series prediction.
-              Analyzed budget trends and data from different services.
-            </p>
-            <a
-              href="https://www.uwb.edu/studentaffairs/safc"
-              target="_blank"
-              class="cta"
-              >View Details</a
-            >
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="experience" id="experience">
-      <div class="container">
-        <div class="section-heading">
-          <h1>Work Experience</h1>
-          <h6>Past and current jobs</h6>
-        </div>
-        <div class="timeline" data-aos="fade-down" data-aos-delay="300">
-          <ul>
-            <li class="date" data-date="2020 - Present">
-              <h1>Undergraduate Research Assistant</h1>
-              <h6>Sensor's Energy and Automation Laboratory</h6>
-              <p>
-                I helped automate and create Machine learning bots to aid with
-                laboratory processes and conducted research on AI and aided in
-                Development Operations of the laboratory.
-              </p>
+        <p>
+          I am a university student studying Applied Computing in Data Science
+          at the University of Washington, Bothell campus. My passion is to
+          work with extremely talented people and collaborate to make products
+          that help others and make their lives easier through programming. I
+          love solving difficult problems with code and working on interesting
+          projects I want to pursue.
+          <br /><br />
+          My main language is Python, and I have been working on projects that
+          I want to solve using Python and it's absurd amount of modules and
+          packages, and I want to continue to pursue a career using Python and
+          automation tools to help deliver a better product.
+        </p>
+        <div class="social-media">
+          <ul class="nav-list">
+            <li>
+              <a href="https://www.linkedin.com/in/ethan-yee/" target="_blank" class="icon-link">
+                <i class="fab fa-linkedin"></i>
+              </a>
             </li>
-            <li class="date" data-date="2019 - 2020">
-              <h1>Student Assistant</h1>
-              <h6>University of Washington</h6>
-              <p>
-                I helped manage and present data and information that would help
-                with parking enforcement and analyzed millions of dollars worth
-                of inventory using Python and Excel, while providing excellent
-                customer service to students and staff.
-              </p>
-            </li>
-            <li class="date" data-date="2015 - 2018">
-              <h1>Soccer Referee</h1>
-              <h6>U.S Soccer Federation</h6>
-              <p>
-                I oversaw soccer matches and deliberated on plays and situations
-                that would determine the outcome of games. I also provided
-                excellent communication to referees and assistant referees
-                during matches.
-              </p>
+            <li>
+              <a href="https://github.com/justyeethan" target="_blank" class="icon-link">
+                <i class="fab fa-github-square"></i>
+              </a>
             </li>
           </ul>
         </div>
-        <h6 class="endsection">
-          You can download my full resume
-          <a href="/images/sources/Resume.pdf" download="">Here</a>
-        </h6>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section class="contact" id="contact">
-      <div class="container">
-        <div class="section-heading" data-aos="fade-up" data-aos-delay="300">
-          <h1>Contact</h1>
-          <h6>
-            Let's work together!
-            <a href="mailto: theethan5753@gmail.com">theethan5753@gmail.com</a>
-          </h6>
+  <section class="skills" id="skills">
+    <div class="container">
+      <div class="section-heading">
+        <h1>Skills</h1>
+        <h6>What I can do for you</h6>
+      </div>
+      <div class="my-skills">
+        <div class="skill" data-aos="fade-in" data-aos-delay="300">
+          <div class="icon-container">
+            <i class="fas fa-database"></i>
+          </div>
+          <h1>Database Management</h1>
+          <p>
+            I have knowledge of proper database handling and SQL, and I've
+            working with SQLite3 and SQLAlchemy. I also have advanced skills
+            in Excel, Python and Pandas.
+          </p>
+        </div>
+        <div class="skill" data-aos="fade-in" data-aos-delay="600">
+          <div class="icon-container">
+            <i class="fas fa-code"></i>
+          </div>
+          <h1>Web Development</h1>
+          <p>
+            I am confident in React.js, HTML, CSS, Javascript, Flask, SQL, and
+            Django. I am currently a fullstack developer at SEAL, and I
+            currently work with GraphQL, React.js and AWS Amplify.
+          </p>
+        </div>
+        <div class="skill" data-aos="fade-in" data-aos-delay="900">
+          <div class="icon-container">
+            <i class="fas fa-chart-area"></i>
+          </div>
+          <h1>Data Visualization & Communication</h1>
+          <p>
+            I am skilled in Matplotlib and explaining concepts. I have
+            experience in a professional setting doing just that as a student
+            assistant at UW Bothell.
+          </p>
+        </div>
+        <div class="skill" data-aos="fade-in" data-aos-delay="1100">
+          <div class="icon-container">
+            <i class="fas fa-table"></i>
+          </div>
+          <h1>Data Analysis & Statistics</h1>
+          <p>
+            I have professional experience with data analytics and performing
+            key concepts in statistics. I have been able to work on other
+            projects in stock trading and trend analysis.
+          </p>
+        </div>
+        <div class="skill" data-aos="fade-in" data-aos-delay="1400">
+          <div class="icon-container">
+            <i class="fas fa-terminal"></i>
+          </div>
+          <h1>Unix GNU/Linux</h1>
+          <p>
+            I have experience in *Nix environments, including Arch, Debian,
+            and LFS (Linux From Scratch). I have 2 years of experience running
+            Debian and Arch Linux on a personal and professional level.
+          </p>
+        </div>
+        <div class="skill" data-aos="fade-in" data-aos-delay="1700">
+          <div class="icon-container">
+            <i class="fab fa-python"></i>
+          </div>
+          <h1>Python</h1>
+          <p>
+            I have worked with Python since 5th grade, and my best language. I
+            also have working experience as a Student Assistant managing
+            hordes of data using Python modules like Pandas and Matplotlib.
+          </p>
+        </div>
+        <div class="skill" data-aos="fade-in" data-aos-delay="1800">
+          <div class="icon-container">
+            <i class="fab fa-java"></i>
+          </div>
+          <h1>Java</h1>
+          <p>
+            I have used Java since 10th grade, and I've been using it to build
+            and developing basic android apps and other programs. I have also
+            take courses through my university to learn the intermediate
+            functions of Java.
+          </p>
+        </div>
+        <div class="skill" data-aos="fade-in" data-aos-delay="2000">
+          <div class="icon-container">
+            <i class="fab fa-react"></i>
+          </div>
+          <h1>React.js</h1>
+          <p>
+            I proficient in React.js, and I have worked with it professionally
+            at the Sensors, Energy and Automation Laboratory. I am fairly new
+            with using React, but I have picked it up fairly quickly from the
+            start of the quarter.
+          </p>
         </div>
       </div>
-    </section>
-    <footer class="copyright">
-      <div class="up" id="up">
-        <i class="fa fa-chevron-up"></i>
+    </div>
+  </section>
+
+  <section class="portfolio" id="portfolio">
+    <div class="container">
+      <div class="section-heading">
+        <h1>Portfolio</h1>
+        <h6>View some of my recent work and clubs</h6>
       </div>
-      <p>&copy; 2020 Ethan Yee</p>
-    </footer>
+      <div class="portfolio-item">
+        <div class="portfolio-description has-margin-right" data-aos="fade-right" data-aos-delay="600">
+          <h6>Software Engineer</h6>
+          <h1>TrickFire Robotics</h1>
+          <p>
+            Trickfire Robotics is a club at the University of Washington,
+            Bothell, competing in the NASA Robotics Mining competition. I have
+            helped create helper methods in Python and c++ and I aided in side
+            projects that we have.
+          </p>
+          <a href="https://www.uwb.edu/news/october-2019/trickfire-robotics" target="_blank" class="cta">View
+            Details</a>
+        </div>
+        <div class="portfolio-img" data-aos="fade-left" data-aos-delay="300">
+          <img src="images/portfolioimg1.jpg" alt="" />
+        </div>
+      </div>
+      <div class="portfolio-item">
+        <div class="portfolio-img has-margin-right" data-aos="fade-right" data-aos-delay="600">
+          <img src="images/portfoliobg5.png" alt="" />
+        </div>
+        <div class="portfolio-description" data-aos="fade-left" data-aos-delay="300">
+          <h6>Video Game Development</h6>
+          <h1>Technology Student Association (TSA)</h1>
+          <p>
+            I was a competitor at TSA and most notably, my team placed top 5
+            several times in Video Game Development and other technology-based
+            competitions on a state and a national level.
+          </p>
+          <a href="https://www.kirklandreporter.com/news/lwsd-students-place-at-state-technology-student-association-conference/"
+            target="_blank" class="cta">View Details</a>
+        </div>
+      </div>
+      <div class="portfolio-item">
+        <div class="portfolio-description has-margin-right" data-aos="fade-right" data-aos-delay="300">
+          <h6>Fullstack Development</h6>
+          <h1>FoodWithFriendz Web App</h1>
+          <p>
+            I created a web application using Flask and Jinja2, and created a
+            app that allows users to find places to eat with their friends in
+            an interactive UI that is as simple as Tinder and using with my
+            own custom ranking algorithm.
+          </p>
+          <a href="https://github.com/justyeethan/FoodWithFriends" target="_blank" class="cta">View Details</a>
+        </div>
+        <div class="portfolio-img" data-aos="fade-left" data-aos-delay="600">
+          <img src="images/portfolioimg2.jpg" alt="" />
+        </div>
+      </div>
+      <div class="portfolio-item">
+        <div class="portfolio-img has-margin-right" data-aos="fade-right" data-aos-delay="300">
+          <img src="images/portfolioimg3.jpg" alt="" />
+        </div>
+        <div class="portfolio-description" data-aos="fade-left" data-aos-delay="600">
+          <h6>Algorithms and Data Structures</h6>
+          <h1>Sudoku Solver</h1>
+          <p>
+            I created a sudoku solver that solves a random sudoku board using
+            Java and the A* backtracking algorithm.
+          </p>
+          <a href="https://github.com/justyeethan/SudokuSolver" target="_blank" class="cta">View Details</a>
+        </div>
+      </div>
+      <div class="portfolio-item">
+        <div class="portfolio-description has-margin-right" data-aos="fade-right" data-aos-delay="300">
+          <h6>Web Development</h6>
+          <h1>ToDo App</h1>
+          <p>
+            I created a web application using Flask and Jinja2, and created a
+            simple authenticated Todo app that lets users sign into their
+            account and add things to their todo list.
+          </p>
+          <a href="https://github.com/justyeethan/TodoAppW-Authentication" target="_blank" class="cta">View Details</a>
+        </div>
+        <div class="portfolio-img" data-aos="fade-left" data-aos-delay="600">
+          <img src="images/portfolioimg4.jpg" alt="" />
+        </div>
+      </div>
+      <div class="portfolio-item">
+        <div class="portfolio-img has-margin-right" data-aos="fade-right" data-aos-delay="600">
+          <img src="images/saf.jpg" alt="" />
+        </div>
+        <div class="portfolio-description" data-aos="fade-left" data-aos-delay="300">
+          <h6>Student Representative</h6>
+          <h1>Services and Activities Fee</h1>
+          <p>
+            Created a program to determine the services with the most impact
+            using Natural Language processing and time series prediction.
+            Analyzed budget trends and data from different services.
+          </p>
+          <a href="https://www.uwb.edu/studentaffairs/safc" target="_blank" class="cta">View Details</a>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <script
-      src="https://code.jquery.com/jquery-3.4.1.min.js"
-      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-      crossorigin="anonymous"
-    ></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="scripts/main.js"></script>
-    <!-- For typed.js -->
-    <script src="scripts/typed.js"></script>
-    <script>
-      var typed = new Typed(".typed", {
-        strings: [
-          "Software Engineer",
-          "Data Scientist",
-          "Web Developer",
-          "Dev Ops",
-        ],
-        typeSpeed: 60,
-        backSpeed: 60,
-        loop: true,
-      });
-    </script>
-    <!-- For Particles.js -->
-    <script src="scripts/particles.js"></script>
-    <script>
-      /* particlesJS.load(@dom-id, @path-json, @callback (optional)); */
-      particlesJS.load("particles-js", "scripts/particles.json", function () {
-        console.log("callback - particles.js config loaded");
-      });
-    </script>
+  <section class="experience" id="experience">
+    <div class="container">
+      <div class="section-heading">
+        <h1>Work Experience</h1>
+        <h6>Past and current jobs</h6>
+      </div>
+      <div class="timeline" data-aos="fade-down" data-aos-delay="300">
+        <ul>
+          <li class="date" data-date="2020 - Present">
+            <h1>Undergraduate Research Assistant</h1>
+            <h6>Sensor's Energy and Automation Laboratory</h6>
+            <p>
+              I helped automate and create Machine learning bots to aid with
+              laboratory processes and conducted research on AI and aided in
+              Development Operations of the laboratory.
+            </p>
+          </li>
+          <li class="date" data-date="2019 - 2020">
+            <h1>Student Assistant</h1>
+            <h6>University of Washington</h6>
+            <p>
+              I helped manage and present data and information that would help
+              with parking enforcement and analyzed millions of dollars worth
+              of inventory using Python and Excel, while providing excellent
+              customer service to students and staff.
+            </p>
+          </li>
+          <li class="date" data-date="2015 - 2018">
+            <h1>Soccer Referee</h1>
+            <h6>U.S Soccer Federation</h6>
+            <p>
+              I oversaw soccer matches and deliberated on plays and situations
+              that would determine the outcome of games. I also provided
+              excellent communication to referees and assistant referees
+              during matches.
+            </p>
+          </li>
+        </ul>
+      </div>
+      <h6 class="endsection">
+        You can download my full resume
+        <a href="/images/sources/Resume.pdf" download="">Here</a>
+      </h6>
+    </div>
+  </section>
 
-    <!-- Progress bar -->
-    <script>
-      let progress = document.getElementById('progressbar');
-      let totalHeight = document.body.scrollHeight - window.innerHeight;
-      window.onscroll = function(){
-        let progressHeight = (window.pageYOffset / totalHeight) * 100;
-        progress.style.height = progressHeight + "%";
-      }
-    </script>
-  </body>
+  <section class="contact" id="contact">
+    <div class="container">
+      <div class="section-heading" data-aos="fade-up" data-aos-delay="300">
+        <h1>Contact</h1>
+        <h6>
+          Let's work together!
+          <a href="mailto: theethan5753@gmail.com">theethan5753@gmail.com</a>
+        </h6>
+      </div>
+    </div>
+  </section>
+  <footer class="copyright">
+    <div class="up" id="up">
+      <i class="fa fa-chevron-up"></i>
+    </div>
+    <p>&copy; 2020 Ethan Yee</p>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="scripts/main.js"></script>
+  <!-- For typed.js -->
+  <script src="scripts/typed.js"></script>
+  <script>
+    var typed = new Typed(".typed", {
+      strings: [
+        "Software Engineer",
+        "Data Scientist",
+        "Web Developer",
+        "Dev Ops",
+      ],
+      typeSpeed: 60,
+      backSpeed: 60,
+      loop: true,
+    });
+  </script>
+  <!-- For Particles.js -->
+  <script src="scripts/particles.js"></script>
+  <script>
+    /* particlesJS.load(@dom-id, @path-json, @callback (optional)); */
+    particlesJS.load("particles-js", "scripts/particles.json", function () {
+      console.log("callback - particles.js config loaded");
+    });
+  </script>
+
+  <!-- Progress bar -->
+  <script>
+    let progress = document.getElementById('progressbar');
+    let totalHeight = document.body.scrollHeight - window.innerHeight;
+    window.onscroll = function () {
+      let progressHeight = (window.pageYOffset / totalHeight) * 100;
+      progress.style.height = progressHeight + "%";
+    }
+  </script>
+</body>
+
 </html>

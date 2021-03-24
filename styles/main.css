@@ -236,11 +236,6 @@ li {
   animation: navbar_pulse 1.2s linear infinite;
 }
 
-.menu-toggler:hover {
-  animation: emptyAnimation;
-  animation-play-state: paused;
-}
-
 @keyframes rot {
   0% {
       transform: rotate(-45deg);
