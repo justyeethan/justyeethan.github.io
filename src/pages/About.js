@@ -1,11 +1,10 @@
 import React from "react";
 import styled from "styled-components";
 import PText from "../components/PText";
-import Button from "../components/Button";
+import ResumeButton from "../components/resumeButton";
 import AboutImg from "../assets/images/about-page-img.jpg";
 import AboutInfoItem from "../components/AboutInfoItem";
 import ContactBanner from "../components/ContactBanner";
-import Resume from "../assets/images/Resume.pdf";
 import Experience from "../components/Experience";
 
 const AboutPageStyles = styled.div`
@@ -123,9 +122,7 @@ export default function About() {
                   science.
                 </PText>
               </div>
-              <a href={Resume} target="_blank">
-                <Button btnText="Download Resume" btnLink="/resume" />
-              </a>
+                <ResumeButton btnText="See Resume" />
             </div>
             <div className="right">
               <img src={AboutImg} alt="me" />
@@ -156,7 +153,7 @@ export default function About() {
                 title="Research"
                 items={[
                   "Stanford Artificial Intelligence Laboratory",
-                  "Paul Allen School for Computer Science & Engineering",
+                  "Paul Allen School @ UW",
                   "Sensors, Energy, and Automation Laboratory",
                 ]}
               />
@@ -182,7 +179,7 @@ export default function About() {
               />
               <AboutInfoItem
                 title="Toolkit"
-                items={["Docker", "Excel", "Unix/Linux", "Git/Github"]}
+                items={["Docker", "Excel", "Unix/Linux", "Git"]}
               />
             </div>
             <Experience />

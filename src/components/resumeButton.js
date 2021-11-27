@@ -1,6 +1,6 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import styled from "styled-components";
+import Resume from "../assets/images/Resume.pdf";
 
 const ButtonStyle = styled.div`
   margin-top: 2rem;
@@ -23,15 +23,13 @@ const ButtonStyle = styled.div`
 
 export default function Button({
   btnText = "test",
-  btnLink = "test",
   outline = false,
-  resume = "false",
 }) {
   return (
     <ButtonStyle outline={outline} className="button-wrapper">
-      <Link className="button" to={btnLink}>
+      <a className='button' href={Resume} target='_blank'>
         {btnText}
-      </Link>
+      </a>
     </ButtonStyle>
   );
 }
