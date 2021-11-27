@@ -1,10 +1,10 @@
 import React from 'react';
 import styled from 'styled-components';
-import MapImg from '../assets/images/map.png';
+import MapImg from '../assets/images/map.jpeg';
 import PText from './PText';
 
 const MapStyles = styled.div`
-  background: url(${MapImg}) no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${MapImg}) no-repeat ;
   background-position: center;
   background-size: cover;
   min-height: 400px;
@@ -48,11 +48,11 @@ export default function Map() {
     <MapStyles>
       <div className="container">
         <div className="map__card">
-          <h3 className="map__card__heading">Here is me</h3>
-          <PText>GEC circle, Chittagong, Bangladesh</PText>
+          <h3 className="map__card__heading">Here I am!</h3>
+          <PText>Seattle, Washington</PText>
           <a
             className="map__card__link"
-            href="https://www.google.com/maps/place/GEC+More,+Chittagong/@22.3590818,91.8195583,17z/data=!3m1!4b1!4m5!3m4!1s0x30acd89aaa8239cd:0x6e65fa00001dd59f!8m2!3d22.3590715!4d91.8215486"
+            href="https://goo.gl/maps/K6uGGzdaYFzo2fUU8"
             target="_blank"
             rel="noreferrer"
           >

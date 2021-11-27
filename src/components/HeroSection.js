@@ -1,12 +1,16 @@
-import React from 'react';
-import styled from 'styled-components';
-import HeroImg from '../assets/images/hero.JPG';
-import Button from './Button';
-import SocialMediaArrow from '../assets/images/social-media-arrow.svg';
-import ScrollDownArrow from '../assets/images/scroll-down-arrow.svg';
-import PText from './PText';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faInstagram, faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import React from "react";
+import styled from "styled-components";
+import HeroImg from "../assets/images/hero.JPG";
+import Button from "./Button";
+import SocialMediaArrow from "../assets/images/social-media-arrow.svg";
+import ScrollDownArrow from "../assets/images/scroll-down-arrow.svg";
+import PText from "./PText";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faInstagram,
+  faGithub,
+  faLinkedin,
+} from "@fortawesome/free-brands-svg-icons";
 
 const HeroStyles = styled.div`
   .hero {
@@ -28,7 +32,7 @@ const HeroStyles = styled.div`
       width: 100%;
     }
     .hero__name {
-      font-family: 'Montserrat SemiBold';
+      font-family: "Montserrat SemiBold";
       font-size: 7rem;
       color: var(--white);
     }
@@ -39,9 +43,8 @@ const HeroStyles = styled.div`
     height: 600px;
     margin: 0 auto;
     border: 2px solid var(--gray-1);
-    filter: brightness(50%);
-    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
-    z-index: -5;
+    -webkit-filter: brightness(50%) grayscale(100%); /* Safari 6.0 - 9.0 */
+    z-index: -1;
     position: relative;
   }
   .hero__info {
@@ -92,8 +95,7 @@ const HeroStyles = styled.div`
         margin-bottom: 1rem;
         a {
           display: inline-block;
-          font-size: 1.6rem;
-          transform: rotate(-90deg);
+          font-size: 1.9rem;
           letter-spacing: 5px;
           margin-bottom: 2rem;
         }
@@ -159,7 +161,7 @@ export default function HeroSection() {
       <div className="hero">
         <div className="container">
           <h1 className="hero__heading">
-            <span>Hello, My Name is</span>
+            <span>Hello! My name is</span>
             <span className="hero__name">Ethan Yee</span>
           </h1>
           <div className="hero__img">
@@ -167,11 +169,10 @@ export default function HeroSection() {
           </div>
           <div className="hero__info">
             <PText>
-              I am a Engineering Intern at Apple, currently working on Daisy's 
-              data pipeline. I am passionate about data and building
-              something unique and helpful to the world.
+              Currently a student at the University of Washington, studying
+              Applied Computing and Data Science.
             </PText>
-            <Button btnText="see my works" btnLink="/projects" />
+            <Button btnText="What I've done" btnLink="/projects" />
           </div>
           <div className="hero__social">
             <div className="hero__social__indicator">
@@ -182,7 +183,7 @@ export default function HeroSection() {
               <ul>
                 <li>
                   <a
-                    href="#"
+                    href="https://github.com/justyeethan"
                     target="_blank"
                     rel="noreferrer"
                   >
@@ -191,7 +192,7 @@ export default function HeroSection() {
                 </li>
                 <li>
                   <a
-                    href="http://isntagram.com/web_cifar"
+                    href="https://www.linkedin.com/in/ethan-yee/"
                     target="_blank"
                     rel="noreferrer"
                   >
@@ -200,7 +201,7 @@ export default function HeroSection() {
                 </li>
                 <li>
                   <a
-                    href="http://webcifar.com"
+                    href="https://www.instagram.com/yeeitsethan/"
                     target="_blank"
                     rel="noreferrer"
                   >

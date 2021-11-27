@@ -1,9 +1,9 @@
-import React from 'react';
-import styled from 'styled-components';
-import Button from './Button';
-import PText from './PText';
-import SectionTitle from './SectionTitle';
-import AboutImg from '../assets/images/about-sec-img.png';
+import React from "react";
+import styled from "styled-components";
+import Button from "./Button";
+import PText from "./PText";
+import SectionTitle from "./SectionTitle";
+import AboutImg from "../assets/images/about-sec-img.jpg";
 
 const AboutSectionStyles = styled.div`
   padding: 10rem 0;
@@ -16,6 +16,15 @@ const AboutSectionStyles = styled.div`
   .aboutSection__left,
   .aboutSection__right {
     flex: 1;
+  }
+  .aboutImg {
+    width: 100%;
+    height: 10%;
+    overflow: hidden;
+    object-position: 20% 0%;
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    // Border:
+    border: 2px solid rgb(173, 173, 173);
   }
   .section-title {
     text-align: left;
@@ -80,12 +89,15 @@ export default function AboutSection() {
             heading="About Me"
           />
           <PText>
-            I am a freelance website designer and developer from Chittagong,
-            Bangladesh. I create professional websites. I love art and always
-            try to show unique views to the audience through my design.
+            I am a University of Washington student currently working as a
+            Engineering Intern at Apple. I have a passion for technology and am
+            always looking to improve my skills in data science and data
+            analytics. I have a strong background in statistics and machine
+            learning and am always looking to learn more about the world of data
+            science.
           </PText>
           <div className="aboutSection__buttons">
-            <Button btnText="Works" btnLink="/projects" />
+            <Button btnText="Projects" btnLink="/projects" />
             <Button btnText="Read More" btnLink="/about" outline />
           </div>
         </div>

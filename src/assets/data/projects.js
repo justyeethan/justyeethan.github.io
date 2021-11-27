@@ -8,32 +8,38 @@ import CavinImg from "../images/cavinimg.jpg";
 const projects = [
   {
     id: uuidv4(),
-    name: "U Tracker",
-    desc: "An application to track your all data from one place. I developed the website and the mobile app",
+    name: "Deviant Linux",
+    desc: "I created a GNU/Linux distribution based on Arch Linux. Utilizing automatic Aliasing, I was able to create a built-in ad-blocker into the operating system.",
     img: UTrackerImg,
   },
   {
     id: uuidv4(),
-    name: "Green CTG",
-    desc: "An app to help people to get an overview of how they can make the city beautiful.",
+    name: "Fidelity Stock Analysis API",
+    desc: "I developed a stock analysis API based on Fidelity's dashboard. By leveraging Selenium and ChromeDrivers, I was able to scrape Fidelity's stock GUI and pull data from the webpage.",
     img: GreenCtgImg,
   },
   {
     id: uuidv4(),
-    name: "Coin Tracker",
-    desc: "Using this app you can track any e coin. Also you will get a good advise about investment form the professional",
+    name: "External Face Authenticator",
+    desc: "I created an application that allows users to sign into Linux/based operating systems using a Raspberry Pi 4 and a external camera. Utilizing a You Only Look Once (YOLO) detection algorithm, I created a database that stores user features and signs them in based on their profile.",
     img: CoinTrackerImg,
   },
   {
     id: uuidv4(),
-    name: "Cavin's Portfolio",
-    desc: "A portfolio for Cavin jr. A artist from New york city. The portfolio is made using ReactJs and GatsbyJs.",
+    name: "Spotify Voting Application",
+    desc: "I created an application that allows users to vote for a specific song playing on Spotify. Members can vote to skip, pause, and play songs.",
     img: CavinImg,
   },
   {
     id: uuidv4(),
-    name: "Tracking Soft",
-    desc: "A tracking website that will show the performance of the website. Also you will get some useful advice to improve the performance.",
+    name: "FoodWithFriends Web App",
+    desc: "I created a web application using Flask and React, and created a app that allows users to find places to eat with their friends in an interactive UI that is as simple as Tinder and using with my own custom ranking algorithm.",
+    img: ProjectImg,
+  },
+  {
+    id: uuidv4(),
+    name: "Sudoku Solver",
+    desc: "I created a sudoku solver that solves a random sudoku board using Java and the A* backtracking algorithm.",
     img: ProjectImg,
   },
 ];

@@ -1,10 +1,10 @@
-import React from 'react';
-import styled from 'styled-components';
-import PText from '../components/PText';
-import Button from '../components/Button';
-import AboutImg from '../assets/images/about-page-img.png';
-import AboutInfoItem from '../components/AboutInfoItem';
-import ContactBanner from '../components/ContactBanner';
+import React from "react";
+import styled from "styled-components";
+import PText from "../components/PText";
+import Button from "../components/Button";
+import AboutImg from "../assets/images/about-page-img.jpg";
+import AboutInfoItem from "../components/AboutInfoItem";
+import ContactBanner from "../components/ContactBanner";
 
 const AboutPageStyles = styled.div`
   padding: 20rem 0 10rem 0;
@@ -29,6 +29,9 @@ const AboutPageStyles = styled.div`
       padding: 0.5rem;
       border-radius: 8px;
     }
+    .language {
+      font-size: 1.5rem;
+    }
   }
   .about__heading {
     font-size: 3.6rem;
@@ -43,6 +46,10 @@ const AboutPageStyles = styled.div`
   .right {
     img {
       border: 2px solid var(--gray-1);
+      width: 100%;
+      height: 600px;
+      object-position: 0 50%;
+      -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
     }
   }
   .about__info__items {
@@ -81,29 +88,35 @@ export default function About() {
           <div className="top-section">
             <div className="left">
               <p className="about__subheading">
-                Hi, I am <span>Ayan Khan</span>
+                Hi, I am <span>Ethan Yee</span>{" "}
+                <span className="language">(余泽恩)</span>
               </p>
-              <h2 className="about__heading">A freelance Web developer</h2>
+              <h2 className="about__heading">
+                Junior @ the University of Washington
+              </h2>
               <div className="about__info">
                 <PText>
-                  I am from chittagong, Bangladesh. A place of beauty and
-                  nature. Since my childhood, i love art and design. I always
-                  try to design stuff with my unique point of view. I also love
-                  to create things that can be usefull to others.
+                  I was born in California, and raised in Seattle. I am a junior
+                  studying Applied Computing (Computer Science) in Data Science
+                  at the University of Washington. I have always loved figuring
+                  out trends of data and how they can be used to make better
+                  decisions.
                   <br /> <br />
-                  I started coding since I was in high school. Coding is also an
-                  art for me. I love it and now I have the opportunity to design
-                  along with the coding. I find it really interesting and I
-                  enjoyed the process a lot.
+                  I am currently working at Apple as an Intern working on data
+                  pipelines for Daisy, which is automated robot for recycling
+                  parts for iPhones. I have always loved working on
+                  environmental efforts, and I someday want to use my skills to
+                  help the environment the people who reside in it.
                   <br />
-                  <br />
-                  My vision is to make the world a better place. Now almost
-                  everything is becoming better than ever. It is time for us to
-                  create more good stuff that helps the world to become a better
-                  place.
+                  <br />I am a big fan of statistics and machine learning, and I
+                  am always looking to learn more about the world of data
+                  science. improve my skills in data science and data analytics.
+                  I have a strong background in statistics and machine learning
+                  and am always looking to learn more about the world of data
+                  science.
                 </PText>
               </div>
-              <Button btnText="Download CV" btnLink="#" />
+              <Button btnText="Download Resume" btnLink="#" />
             </div>
             <div className="right">
               <img src={AboutImg} alt="me" />
@@ -115,15 +128,28 @@ export default function About() {
 
               <AboutInfoItem
                 title="School"
-                items={['Nasirabad Govt. High School, Chattogram']}
+                items={["University of Washington"]}
               />
               <AboutInfoItem
-                title="Collage"
-                items={['BAF Shaheen College Chattogram']}
+                title="Degree"
+                items={["Applied Computing (Computer Science)", "Data Science"]}
               />
               <AboutInfoItem
-                title="Varsity"
-                items={['University Of Chitiagong']}
+                title="Clubs"
+                items={[
+                  "Trickfire Robotics",
+                  "Hong Kong Student Association",
+                  "HackRover",
+                ]}
+              />
+              <br />
+              <AboutInfoItem
+                title="Research"
+                items={[
+                  "Stanford Artificial Intelligence Laboratory",
+                  "Paul Allen School for Computer Science & Engineering",
+                  "Sensors, Energy, and Automation Laboratory",
+                ]}
               />
             </div>
             <div className="about__info__item">
@@ -131,31 +157,52 @@ export default function About() {
 
               <AboutInfoItem
                 title="FrontEnd"
-                items={['HTML', 'CSS', 'JavaScript', 'REACT']}
+                items={["HTML", "CSS", "JavaScript", "React.js"]}
               />
               <AboutInfoItem
                 title="BackEnd"
-                items={['Node', 'Express', 'PHP']}
+                items={["Python", "Node.js", "C++", "Java"]}
               />
               <AboutInfoItem
-                title="Design"
-                items={['Photoshop', 'After Effects', 'Figma']}
+                title="Data Science"
+                items={["MatLab", "R", "iPython", "Tableau"]}
+              />
+              <AboutInfoItem
+                title="Concepts"
+                items={["Regression Analysis", "Probability", "Statistics"]}
+              />
+              <AboutInfoItem
+                title="Toolkit"
+                items={["Docker", "Excel", "Unix/Linux", "Git/Github"]}
               />
             </div>
             <div className="about__info__item">
-              <h1 className="about__info__heading">Experiences</h1>
-
+              <h1 className="about__info__heading">Internships</h1>
               <AboutInfoItem
-                title="2010-2012"
-                items={['junior developer at web Cifar']}
+                title="2021"
+                items={[
+                  "Software Engineering Intern @ Apple (Jun-Sep)",
+                  "Engineer Intern @ Apple (Sep-Present)",
+                ]}
               />
+              <br />
+              <br />
               <AboutInfoItem
-                title="2012-2016"
-                items={['Front end developer at web Cifar ']}
+                title="2020"
+                items={[
+                  "Software Engineer Intern @ Microsoft (Jun-Sep)",
+                  "Software Engineer Intern @ PayPal (Sep-Dec)",
+                ]}
               />
+            </div>
+            <div className="about__info__item">
+              <h1 className="about__info__heading">Work Experience</h1>
+              <AboutInfoItem title="2021" items={["Peer Coach (Mar-Sep)"]} />
+              <br />
+              <br />
               <AboutInfoItem
-                title="2016-"
-                items={['Freelance web Developer']}
+                title="2019-2020"
+                items={["Technical Support Student Assistant (Jun-Mar)"]}
               />
             </div>
           </div>

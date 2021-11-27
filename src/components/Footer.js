@@ -57,11 +57,11 @@ export default function Footer() {
     <FooterStyle>
       <div className="container">
         <div className="footer__col1">
-          <h1 className="footer__col1__title">Ayan Khan</h1>
+          <h1 className="footer__col1__title">Ethan Yee</h1>
           <PText>
-            A freelance web designer and developer from Chittagong, Bangladesh.
-            I always make websites that have unique designs and also has a good
-            performance rate.
+              Currently a student at the University of Washington, studying
+              Applied Computing and Data Science. I am working on strengthening
+              my skills in data science and machine learning.
           </PText>
         </div>
         <div className="footer__col2">
@@ -96,15 +96,15 @@ export default function Footer() {
             heading="Contact Info"
             links={[
               {
-                title: '+88012312',
-                path: 'tel:+88012312',
+                title: '+1(425)350-3819',
+                path: 'tel:4253503819',
               },
               {
-                title: 'webcifar@gmail.com',
-                path: 'mailto:webcifar@gmail.com',
+                title: 'theethan5753@gmail.com',
+                path: 'mailto:theethan5753@gmail.com',
               },
               {
-                title: 'GEC Circle, Chittagong, Bangladesh',
+                title: 'Seattle, Washington',
                 path: 'http://google.com/maps',
               },
             ]}
@@ -112,19 +112,19 @@ export default function Footer() {
         </div>
         <div className="footer__col4">
           <FooterCol
-            heading="social Links"
+            heading="Social Links"
             links={[
               {
-                title: 'Facebook',
-                path: 'http://facebook.com',
+                title: 'LinkedIn',
+                path: 'https://www.linkedin.com/in/ethan-yee/',
               },
               {
-                title: 'Twitter',
-                path: 'http://twitter.com',
+                title: 'GitHub',
+                path: 'https://github.com/justyeethan',
               },
               {
                 title: 'Instagram',
-                path: 'http://instagram.com',
+                path: 'https://instagram.com/yeeitsethan',
               },
             ]}
           />
@@ -133,10 +133,7 @@ export default function Footer() {
       <div className="copyright">
         <div className="container">
           <PText>
-            © 2021 - Ayan Khan | Designed By{' '}
-            <a target="_blank" rel="noreferrer" href="http://webcifar.com">
-              web cifar
-            </a>{' '}
+            © 2021 - Ethan Yee
           </PText>
         </div>
       </div>
