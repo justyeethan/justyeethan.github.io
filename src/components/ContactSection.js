@@ -1,11 +1,17 @@
 import React from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import styled from "styled-components";
 import { MdEmail, MdLocalPhone } from "react-icons/md";
 import ContactForm from "./ContactForm";
 import ContactInfoItem from "./ContactInfoItem";
 import SectionTitle from "./SectionTitle";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faGithub, faInstagram, faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import {
+  faGithub,
+  faInstagram,
+  faLinkedin,
+} from "@fortawesome/free-brands-svg-icons";
 
 const ContactSectionStyle = styled.div`
   padding: 10rem 0;
@@ -49,32 +55,50 @@ const ContactSectionStyle = styled.div`
 `;
 
 export default function ContactSection() {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+    });
+  }, []);
+
   return (
-    <ContactSectionStyle>
+    <ContactSectionStyle data-aos="fade-up">
       <div className="container">
         <SectionTitle heading="contact" subheading="How to reach me" />
         <div className="contactSection__wrapper">
           <div className="left">
-            <a target='_blank' href="mailto:theethan5753@gmail.com">
-              <ContactInfoItem icon={<MdEmail />} text="theethan5753@gmail.com" />
+            <a target="_blank" href="mailto:theethan5753@gmail.com">
+              <ContactInfoItem
+                icon={<MdEmail />}
+                text="theethan5753@gmail.com"
+              />
             </a>
-            <a target='_blank' href="https://goo.gl/maps/qJxEHgubn3CqSg8s8">
+            <a target="_blank" href="https://goo.gl/maps/qJxEHgubn3CqSg8s8">
               <ContactInfoItem text="Seattle, Washington" />
             </a>
           </div>
           <div className="right">
-            <a target='_blank' href="https://www.instagram.com/yeeitsethan/">
-              <ContactInfoItem icon={<FontAwesomeIcon icon={faInstagram} size='3x'/>} text="yeeitsethan" />
+            <a target="_blank" href="https://www.instagram.com/yeeitsethan/">
+              <ContactInfoItem
+                icon={<FontAwesomeIcon icon={faInstagram} size="3x" />}
+                text="yeeitsethan"
+              />
             </a>
-            <a target='_blank' href="https://www.linkedin.com/in/ethan-yee/">
-              <ContactInfoItem icon={<FontAwesomeIcon icon={faLinkedin} size='3x'/>} text="Ethan Yee" />
+            <a target="_blank" href="https://www.linkedin.com/in/ethan-yee/">
+              <ContactInfoItem
+                icon={<FontAwesomeIcon icon={faLinkedin} size="3x" />}
+                text="Ethan Yee"
+              />
             </a>
-            <a target='_blank' href="https://github.com/justyeethan">
-              <ContactInfoItem icon={<FontAwesomeIcon icon={faGithub} size='3x'/>} text="justyeethan" />
+            <a target="_blank" href="https://github.com/justyeethan">
+              <ContactInfoItem
+                icon={<FontAwesomeIcon icon={faGithub} size="3x" />}
+                text="justyeethan"
+              />
             </a>
           </div>
         </div>
       </div>
-      </ContactSectionStyle>
-    )    
-  }
+    </ContactSectionStyle>
+  );
+}

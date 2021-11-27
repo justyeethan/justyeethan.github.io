@@ -1,9 +1,11 @@
-import React from "react";
+import { React, useEffect } from "react";
 import styled from "styled-components";
 import Button from "./Button";
 import PText from "./PText";
 import SectionTitle from "./SectionTitle";
 import AboutImg from "../assets/images/about-sec-img.jpg";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const AboutSectionStyles = styled.div`
   padding: 10rem 0;
@@ -80,8 +82,11 @@ const AboutSectionStyles = styled.div`
 `;
 
 export default function AboutSection() {
+  useEffect(() => {
+    AOS.init({ duration: 2000 });
+  }, []);
   return (
-    <AboutSectionStyles>
+    <AboutSectionStyles data-aos="fade-up">
       <div className="container">
         <div className="aboutSection__left">
           <SectionTitle

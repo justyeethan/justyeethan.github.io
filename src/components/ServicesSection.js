@@ -1,8 +1,10 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { MdDesktopMac, MdCode, MdPhonelinkSetup } from 'react-icons/md';
 import styled from 'styled-components';
 import SectionTitle from './SectionTitle';
 import ServicesSectionItem from './ServicesSectionItem';
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {  faChartBar } from '@fortawesome/free-regular-svg-icons';
@@ -29,30 +31,38 @@ const ServicesItemsStyles = styled.div`
 `;
 
 export default function ServicesSection() {
+  useEffect(() => {
+    AOS.init({
+      duration: 2000,
+    });
+  }, []);
   return (
     <ServicesItemsStyles>
-      <div className="container">
+      <div data-aos='fade-up' data-aos-delay='50' className="container">
         <SectionTitle subheading="Specialties" heading="Skills" />
-        <div className="services__allItems">
+        <div data-aos='fade-up' className="services__allItems">
           <ServicesSectionItem
+            data-aos='fade-up' data-aos-delay='50'
             icon={<FontAwesomeIcon icon={faChartBar} size='5x' />}
             title="Data Visualization"
             desc="I build comprehensive charts and tables for large datasets and variables"
           />
           <ServicesSectionItem
+            data-aos='fade-up' data-aos-delay='150'
             icon={<FontAwesomeIcon icon={faCode} size='5x' />}
             title="Web Development"
             desc="I can manage your entire website, using anything, from your front-end, to your
             lower level api."
           />
           <ServicesSectionItem
+            data-aos='fade-up' data-aos-delay='250'
             icon={<FontAwesomeIcon icon={faRobot} size="5x" />}
             title="Machine Learning"
             desc="I have extensive experience with developing neural networks for computer vision,
             with supervised and unsupervised learning."
           />
         </div>
-        <div className="services__allItems">
+        <div data-aos='fade-up' data-aos-delay='100' className="services__allItems">
           <ServicesSectionItem
             icon={<FontAwesomeIcon icon={faDatabase} size='5x' />}
             title="Database Management (SQL, NoSQL)"
@@ -72,7 +82,7 @@ export default function ServicesSection() {
             and I can deploy and maintain your server environments."
           />
         </div>
-        <div className="services__allItems">
+        <div data-aos='fade-up' data-aos-delay='150' className="services__allItems">
           <ServicesSectionItem
             icon={<FontAwesomeIcon icon={faPython} size='5x' />}
             title="Python"

@@ -1,7 +1,9 @@
-import React from 'react';
+import { React, useEffect } from 'react';
 import styled from 'styled-components';
 import Button from './Button';
 import PText from './PText';
+import AOS from 'aos';
+import "aos/dist/aos.css";
 
 const ContactBannerStyles = styled.div`
   padding: 5rem 0;
@@ -23,8 +25,11 @@ const ContactBannerStyles = styled.div`
 `;
 
 export default function ContactBanner() {
+  useEffect(() => {
+    AOS.init();
+  }, []);
   return (
-    <ContactBannerStyles>
+    <ContactBannerStyles data-aos='fade-up'>
       <div className="container">
         <div className="contactBanner__wrapper">
           <PText>Interested in working together?</PText>

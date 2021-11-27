@@ -1,5 +1,7 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import styled from 'styled-components';
+import AOS from 'aos';
+import "aos/dist/aos.css";
 import { MdArrowForward, MdArrowBack } from 'react-icons/md';
 import { CSSTransition, SwitchTransition } from 'react-transition-group';
 import PText from './PText';
@@ -99,14 +101,19 @@ export default function TestimonialsSection() {
     }
   }
 
+  useEffect(() => {
+    AOS.init({ duration: 2000 });
+  }, []);
+
   return (
     <TestimonialSectionStyles>
       <div className="container">
         <SectionTitle
+          data-aos="fade-up"
           subheading="Hear from people I've worked with in the past"
           heading="Testimonials"
         />
-        <div className="testimonial__wrapper">
+        <div data-aos="fade-up" className="testimonial__wrapper">
           <SwitchTransition component={null}>
             <CSSTransition key={activeSlide.id} timeout={300} classNames="fade">
               <div className="testimonial__info">

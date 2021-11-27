@@ -1,11 +1,13 @@
-import React from 'react';
-import styled from 'styled-components';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import SwiperCore, { Navigation } from 'swiper';
-import ProjectItem from './ProjectItem';
-import SectionTitle from './SectionTitle';
-import 'swiper/swiper-bundle.min.css';
-import projects from '../assets/data/projects';
+import React, { useEffect } from "react";
+import styled from "styled-components";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { Swiper, SwiperSlide } from "swiper/react";
+import SwiperCore, { Navigation } from "swiper";
+import ProjectItem from "./ProjectItem";
+import SectionTitle from "./SectionTitle";
+import "swiper/swiper-bundle.min.css";
+import projects from "../assets/data/projects";
 
 // install Swiper modules
 SwiperCore.use([Navigation]);
@@ -57,12 +59,21 @@ const ProjectSectionStyle = styled.div`
 `;
 
 export default function ProjectsSection() {
-  // console.log(projects);
+  useEffect(() => {
+    AOS.init({
+      duration: 2000,
+    });
+  }, []);
+
   return (
     <ProjectSectionStyle>
       <div className="container">
-        <SectionTitle subheading="Cool things I've done" heading="Projects" />
-        <div className="projects__allItems">
+        <SectionTitle
+          data-aos="fade-up"
+          subheading="Cool things I've done"
+          heading="Projects"
+        />
+        <div data-aos="fade-up" className="projects__allItems">
           <Swiper
             spaceBetween={30}
             slidesPerView={1}
