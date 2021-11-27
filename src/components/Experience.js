@@ -34,7 +34,7 @@ const ExperienceStyled = styled.div`
   }
 
   .timeline .date {
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
     margin-bottom: 1rem;
     padding-bottom: 0.5rem;
     position: relative;
@@ -63,7 +63,8 @@ const ExperienceStyled = styled.div`
 
   .timeline .date::after {
     content: "";
-    box-shadow: 0 0 0 4px #1b9ed1;
+    // box-shadow: 0 0 0 4px #1b9ed1;
+    box-shadow: 0 0 0 4px #656161;
     border-radius: 100%;
     left: -6rem;
     height: 1.5rem;
@@ -71,24 +72,6 @@ const ExperienceStyled = styled.div`
     background-color: #313534;
   }
 
-  .endsection {
-    font-size: 1.6rem;
-    font-weight: 300;
-    padding-top: 5rem;
-    text-align: center;
-  }
-
-  .endsection a {
-    font-size: 1.6rem;
-    font-weight: 300;
-    color: #3883ff;
-  }
-
-  .endsection a:hover {
-    font-size: 1.6rem;
-    font-weight: 300;
-    color: #2f67cd;
-  }
 `;
 
 export default function Experience() {
