@@ -35,7 +35,13 @@
       "wesbos"
     ],
     "rules": {
-      "react/prop-types": 0
+      "react/prop-types": 0,
+      "prettier/prettier": [
+        "error",
+        {
+          "singleQuote": true
+        }
+      ]
     }
   },
   "browserslist": {
@@ -65,5 +71,5 @@
     "gh-pages": "^3.2.3",
     "prettier": "^2.1.1"
   },
-  "homepage": "http://justyeethan.github.io/react-portfolio"
+  "homepage": "http://justyeethan.github.io/"
 }
