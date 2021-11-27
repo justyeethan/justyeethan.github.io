@@ -13,6 +13,9 @@ const ColStyle = styled.div`
   a {
     font-size: 1.8rem;
   }
+  a:hover { 
+    color: #f7f7f7;
+  }
 `;
 
 export default function FooterCol({

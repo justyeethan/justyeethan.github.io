@@ -1,4 +1,4 @@
-import React from 'react';
+import { useEffect } from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Footer from './components/Footer';
 import NavMenu from './components/NavMenu';
@@ -9,6 +9,9 @@ import Home from './pages/Home';
 import Projects from './pages/Projects';
 
 export default function App() {
+  useEffect(() => {
+    document.title = "Ethan Yee's Portfolio"
+ }, []);
   return (
     <>
       <Router>
