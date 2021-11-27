@@ -187,7 +187,7 @@ export default function HeroSection() {
                     target="_blank"
                     rel="noreferrer"
                   >
-                    <FontAwesomeIcon icon={faGithub} size="lg" />
+                    <FontAwesomeIcon icon={faGithub} size="2x" />
                   </a>
                 </li>
                 <li>
@@ -196,7 +196,7 @@ export default function HeroSection() {
                     target="_blank"
                     rel="noreferrer"
                   >
-                    <FontAwesomeIcon icon={faLinkedin} size="lg" />
+                    <FontAwesomeIcon icon={faLinkedin} size="2x" />
                   </a>
                 </li>
                 <li>
@@ -205,7 +205,7 @@ export default function HeroSection() {
                     target="_blank"
                     rel="noreferrer"
                   >
-                    <FontAwesomeIcon icon={faInstagram} size="lg" />
+                    <FontAwesomeIcon icon={faInstagram} size="2x" />
                   </a>
                 </li>
               </ul>
