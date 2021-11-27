@@ -6,6 +6,7 @@ import AboutImg from "../assets/images/about-page-img.jpg";
 import AboutInfoItem from "../components/AboutInfoItem";
 import ContactBanner from "../components/ContactBanner";
 import Resume from "../assets/images/Resume.pdf";
+import Experience from "../components/Experience";
 
 const AboutPageStyles = styled.div`
   padding: 20rem 0 10rem 0;
@@ -79,6 +80,11 @@ const AboutPageStyles = styled.div`
       font-size: 3rem;
     }
   }
+
+  // >>>>>> Timeline of Experience >>>>>>>
+
+  // >>>>>>> End Timeline of Experience >>>>>>>
+
 `;
 
 export default function About() {
@@ -117,8 +123,8 @@ export default function About() {
                   science.
                 </PText>
               </div>
-              <a href={Resume} target="_blank" >
-                <Button btnText="Download Resume" btnLink='/resume' />
+              <a href={Resume} target="_blank">
+                <Button btnText="Download Resume" btnLink="/resume" />
               </a>
             </div>
             <div className="right">
@@ -179,35 +185,7 @@ export default function About() {
                 items={["Docker", "Excel", "Unix/Linux", "Git/Github"]}
               />
             </div>
-            <div className="about__info__item">
-              <h1 className="about__info__heading">Internships</h1>
-              <AboutInfoItem
-                title="2021"
-                items={[
-                  "Software Engineering Intern @ Apple (Jun-Sep)",
-                  "Engineer Intern @ Apple (Sep-Present)",
-                ]}
-              />
-              <br />
-              <br />
-              <AboutInfoItem
-                title="2020"
-                items={[
-                  "Software Engineer Intern @ Microsoft (Jun-Sep)",
-                  "Software Engineer Intern @ PayPal (Sep-Dec)",
-                ]}
-              />
-            </div>
-            <div className="about__info__item">
-              <h1 className="about__info__heading">Work Experience</h1>
-              <AboutInfoItem title="2021" items={["Peer Coach (Mar-Sep)"]} />
-              <br />
-              <br />
-              <AboutInfoItem
-                title="2019-2020"
-                items={["Technical Support Student Assistant (Jun-Mar)"]}
-              />
-            </div>
+            <Experience />
           </div>
         </div>
         <ContactBanner />

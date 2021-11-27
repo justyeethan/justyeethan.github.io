@@ -28,8 +28,8 @@ export default function ContactBanner() {
       <div className="container">
         <div className="contactBanner__wrapper">
           <PText>Interested in working together?</PText>
-          <h3 className="contactBanner__heading">Connect with me</h3>
-          <Button btnText="Contact Now" btnLink="/contact" />
+          <h3 className="contactBanner__heading">Or do you just want to chat?</h3>
+          <Button btnText="Contact Me" btnLink="/contact" />
         </div>
       </div>
     </ContactBannerStyles>
