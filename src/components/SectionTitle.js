@@ -1,5 +1,7 @@
-import React from 'react';
+import { React, useEffect } from 'react';
 import styled from 'styled-components';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const SectionTitleStyle = styled.div`
   text-align: center;
@@ -28,8 +30,14 @@ export default function SectionTitle({
   subheading = 'Need Subheading',
   heading = 'need heading',
 }) {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+    });
+  }, []);
+
   return (
-    <SectionTitleStyle className="section-title">
+    <SectionTitleStyle data-aos='fade-up' className="section-title">
       <p>{subheading}</p>
       <h2>{heading}</h2>
     </SectionTitleStyle>

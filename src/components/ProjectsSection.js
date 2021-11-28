@@ -69,7 +69,6 @@ export default function ProjectsSection() {
     <ProjectSectionStyle>
       <div className="container">
         <SectionTitle
-          data-aos="fade-up"
           subheading="Cool things I've done"
           heading="Projects"
         />

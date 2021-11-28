@@ -1,4 +1,7 @@
-import React from "react";
+import { React, useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 import styled from "styled-components";
 
 const ExperienceStyled = styled.div`
@@ -75,10 +78,14 @@ const ExperienceStyled = styled.div`
 `;
 
 export default function Experience() {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+    });
+  }, []);
   return (
     <ExperienceStyled>
-      <div className="timeline">
-        <h1>Experience</h1>
+      <div data-aos='fade-up' className="timeline">
         <ul>
           <li className="date">
             <span data-date="2019-01-01">

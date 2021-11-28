@@ -20,7 +20,7 @@ const projects = [
   {
     id: uuidv4(),
     name: "Cheaper Prosthetic Limbs",
-    desc: "Along with students at Stanford, the SAIL and engineering students and I created a cheaper and more efficient solution for prosthetic legs and more accurate hand gestures.",
+    desc: "Along with students at Stanford, we created a cheaper and more efficient solution for prosthetic legs and more accurate hand gestures.",
     img: Prosthetics,
   },
   {

@@ -4,6 +4,8 @@ import { MdSearch } from "react-icons/md";
 import SectionTitle from "../components/SectionTitle";
 import ProjectsInfo from "../assets/data/projects";
 import ProjectItem from "../components/ProjectItem";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const ProjectStyle = styled.div`
   padding: 10rem 0;
@@ -56,6 +58,12 @@ export default function Projects() {
       )
     );
   }, [searchText]);
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+    });
+  }, []);
+
   const handleChange = (e) => {
     e.preventDefault();
     setSearchText(e.target.value);
@@ -66,7 +74,7 @@ export default function Projects() {
   return (
     <>
       <ProjectStyle>
-        <div className="container">
+        <div data-aos='fade-up' className="container">
           <SectionTitle
             heading="Projects"
             subheading="Some of my recent work"

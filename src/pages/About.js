@@ -1,4 +1,4 @@
-import React from "react";
+import { React, useEffect } from "react";
 import styled from "styled-components";
 import PText from "../components/PText";
 import ResumeButton from "../components/resumeButton";
@@ -6,6 +6,8 @@ import AboutImg from "../assets/images/about-page-img.jpg";
 import AboutInfoItem from "../components/AboutInfoItem";
 import ContactBanner from "../components/ContactBanner";
 import Experience from "../components/Experience";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const AboutPageStyles = styled.div`
   padding: 20rem 0 10rem 0;
@@ -87,11 +89,16 @@ const AboutPageStyles = styled.div`
 `;
 
 export default function About() {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      });
+  }, []);
   return (
     <>
       <AboutPageStyles>
         <div className="container">
-          <div className="top-section">
+          <div data-aos='fade-up' className="top-section">
             <div className="left">
               <p className="about__subheading">
                 Hi, I am <span>Ethan Yee</span>{" "}
@@ -129,7 +136,7 @@ export default function About() {
             </div>
           </div>
           <div className="about__info__items">
-            <div className="about__info__item">
+            <div data-aos='fade-up' className="about__info__item">
               <h1 className="about__info__heading">Education</h1>
 
               <AboutInfoItem
@@ -158,7 +165,7 @@ export default function About() {
                 ]}
               />
             </div>
-            <div className="about__info__item">
+            <div data-aos='fade-up' className="about__info__item">
               <h1 className="about__info__heading">My Skills</h1>
 
               <AboutInfoItem
@@ -182,6 +189,8 @@ export default function About() {
                 items={["Docker", "Excel", "Unix/Linux", "Git"]}
               />
             </div>
+
+              <h1 className="about__info__heading">Experience</h1>
             <Experience />
           </div>
         </div>
