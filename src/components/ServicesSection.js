@@ -45,20 +45,20 @@ export default function ServicesSection() {
             data-aos='fade-up'
             icon={<FontAwesomeIcon icon={faChartBar} size='5x' />}
             title="Data Visualization"
-            desc="I build comprehensive charts and tables for large datasets and variables"
+            desc="Build comprehensive charts and tables for large datasets and variables"
           />
           <ServicesSectionItem
             data-aos='fade-up'
             icon={<FontAwesomeIcon icon={faCode} size='5x' />}
             title="Web Development"
-            desc="I can manage your entire website, using anything, from your front-end, to your
+            desc="Can manage your entire website, using anything, from your front-end, to your
             lower level api."
           />
           <ServicesSectionItem
             data-aos='fade-up'
             icon={<FontAwesomeIcon icon={faRobot} size="5x" />}
             title="Machine Learning"
-            desc="I have extensive experience with developing neural networks for computer vision,
+            desc="Had experience with developing neural networks for computer vision,
             with supervised and unsupervised learning."
           />
         </div>
@@ -66,19 +66,19 @@ export default function ServicesSection() {
           <ServicesSectionItem
             icon={<FontAwesomeIcon icon={faDatabase} size='5x' />}
             title="Database Management (SQL, NoSQL)"
-            desc="I have extensive experience in SQL and NoSQL databases, and I can help manage your 
+            desc="Had extensive experience in SQL and NoSQL databases, and I can help manage your 
             data pipeline."
           />
           <ServicesSectionItem
             icon={<FontAwesomeIcon icon={faTable} size='5x' />}
             title="Data Analysis & Statistics"
-            desc="I have extensive knowledge of drawing statistical significance between variables
+            desc="Knowledge of drawing statistical significance between variables
             using probability and statistical features."
           />
           <ServicesSectionItem
             icon={<FontAwesomeIcon icon={faLinux} size="5x" />}
             title="GNU/Linux & Dev Ops"
-            desc="I have extensive experience with Linux distributions since I was a Freshman in high school,
+            desc="Experience with Linux distributions since I was a Freshman in high school,
             and I can deploy and maintain your server environments."
           />
         </div>
