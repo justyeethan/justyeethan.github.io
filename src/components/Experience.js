@@ -92,7 +92,7 @@ export default function Experience() {
           {experience.map((exp, index) => {
             return (
               <li className="date">
-                <span>
+                <span className={`job_id_${index}`}>
                   <h2>{exp.date}</h2>
                   <h1>{exp.title}</h1>
                   <h6>{exp.company}</h6>
