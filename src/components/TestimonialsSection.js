@@ -102,14 +102,17 @@ export default function TestimonialsSection() {
   }
 
   useEffect(() => {
-    AOS.init({ duration: 2000 });
+    AOS.init({ 
+      duration: 2000,
+      once: true,
+    });
   }, []);
 
   return (
     <TestimonialSectionStyles>
       <div className="container">
         <SectionTitle
-          data-aos="fade-up"
+          data-aos="fade-up" data-aos-delay='100'
           subheading="Hear from people I've worked with in the past"
           heading="Testimonials"
         />

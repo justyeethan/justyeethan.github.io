@@ -81,11 +81,12 @@ export default function Experience() {
   useEffect(() => {
     AOS.init({
       duration: 1000,
+      once: true
     });
   }, []);
   return (
     <ExperienceStyled>
-      <div data-aos='fade-up' className="timeline">
+      <div data-aos='fade-up' data-aos-delay='100' className="timeline">
         <ul>
           <li className="date">
             <span data-date="2019-01-01">

@@ -1,7 +1,9 @@
-import React from 'react';
+import { React, useEffect } from 'react';
 import styled from 'styled-components';
 import FooterCol from './FooterCol';
 import PText from './PText';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const FooterStyle = styled.div`
   background-color: var(--deep-dark);
@@ -53,8 +55,14 @@ const FooterStyle = styled.div`
 `;
 
 export default function Footer() {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      once: true
+    });
+  }, []);
   return (
-    <FooterStyle>
+    <FooterStyle data-aos='flip-left' data-aos-delay='100'>
       <div className="container">
         <div className="footer__col1">
           <h1 className="footer__col1__title">Ethan Yee</h1>

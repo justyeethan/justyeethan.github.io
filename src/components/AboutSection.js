@@ -83,10 +83,13 @@ const AboutSectionStyles = styled.div`
 
 export default function AboutSection() {
   useEffect(() => {
-    AOS.init({ duration: 2000 });
+    AOS.init({ 
+      duration: 2000,
+      once: true
+    });
   }, []);
   return (
-    <AboutSectionStyles data-aos="fade-up">
+    <AboutSectionStyles data-aos="fade-up" data-aos-delay='100'>
       <div className="container">
         <div className="aboutSection__left">
           <SectionTitle

@@ -33,11 +33,12 @@ export default function SectionTitle({
   useEffect(() => {
     AOS.init({
       duration: 1000,
+      once: true
     });
   }, []);
 
   return (
-    <SectionTitleStyle data-aos='fade-up' className="section-title">
+    <SectionTitleStyle data-aos='fade-up' data-aos-delay='100' className="section-title">
       <p>{subheading}</p>
       <h2>{heading}</h2>
     </SectionTitleStyle>

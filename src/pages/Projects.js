@@ -61,6 +61,7 @@ export default function Projects() {
   useEffect(() => {
     AOS.init({
       duration: 1000,
+      once: true
     });
   }, []);
 
@@ -74,7 +75,7 @@ export default function Projects() {
   return (
     <>
       <ProjectStyle>
-        <div data-aos='fade-up' className="container">
+        <div data-aos='fade-up' data-aos-delay='300' className="container">
           <SectionTitle
             heading="Projects"
             subheading="Some of my recent work"

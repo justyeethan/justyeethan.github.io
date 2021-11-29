@@ -23,7 +23,8 @@ const AboutItemStyles = styled.div`
     padding: 1rem;
     border-radius: 8px;
   }
-  @media only screen and (max-width: 768px) {
+
+  @media only screen and (max-width: 1000px) {
     flex-direction: column;
     align-items: flex-start;
     gap: 1rem;
@@ -45,12 +46,11 @@ export default function AboutInfoItem({
     <AboutItemStyles>
       <h1 className="title">{title}</h1>
       <div className="items">
-        {items.slice(0,5).map((item, index) => (
+        {items.slice(0,4).map((item, index) => (
           <div className="item" key={index}>
             <PText>{item}</PText>
           </div>
         ))}
-        <br />  
       </div>
     </AboutItemStyles>
   );

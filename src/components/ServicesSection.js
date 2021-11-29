@@ -33,28 +33,29 @@ export default function ServicesSection() {
   useEffect(() => {
     AOS.init({
       duration: 2000,
+      once: true
     });
   }, []);
   return (
     <ServicesItemsStyles>
       <div data-aos='fade-up' data-aos-delay='100' className="container">
         <SectionTitle subheading="Specialties" heading="Skills" />
-        <div data-aos='fade-up' className="services__allItems">
+        <div data-aos='fade-up' data-aos-delay='100' className="services__allItems">
           <ServicesSectionItem
-            data-aos='fade-up' 
+            data-aos='fade-up'  data-aos-delay='100'
             icon={<FontAwesomeIcon icon={faChartBar} size='5x' />}
             title="Data Visualization"
             desc="I build comprehensive charts and tables for large datasets and variables"
           />
           <ServicesSectionItem
-            data-aos='fade-up'
+            data-aos='fade-up' data-aos-delay='100'
             icon={<FontAwesomeIcon icon={faCode} size='5x' />}
             title="Web Development"
             desc="I can manage your entire website, using anything, from your front-end, to your
             lower level api."
           />
           <ServicesSectionItem
-            data-aos='fade-up'
+            data-aos='fade-up' data-aos-delay='100'
             icon={<FontAwesomeIcon icon={faRobot} size="5x" />}
             title="Machine Learning"
             desc="I have extensive experience with developing neural networks for computer vision,

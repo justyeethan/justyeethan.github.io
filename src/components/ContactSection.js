@@ -58,11 +58,12 @@ export default function ContactSection() {
   useEffect(() => {
     AOS.init({
       duration: 1000,
+      once: true
     });
   }, []);
 
   return (
-    <ContactSectionStyle data-aos="fade-up">
+    <ContactSectionStyle data-aos="fade-up" data-aos-delay='100'>
       <div className="container">
         <SectionTitle heading="contact" subheading="How to reach me" />
         <div className="contactSection__wrapper">

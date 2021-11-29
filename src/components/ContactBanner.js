@@ -26,10 +26,13 @@ const ContactBannerStyles = styled.div`
 
 export default function ContactBanner() {
   useEffect(() => {
-    AOS.init();
+    AOS.init({
+      duration: 1000,
+      once: true
+    });
   }, []);
   return (
-    <ContactBannerStyles data-aos='fade-up'>
+    <ContactBannerStyles data-aos='fade-up' data-aos-delay='100'>
       <div className="container">
         <div className="contactBanner__wrapper">
           <PText>Interested in working together?</PText>
