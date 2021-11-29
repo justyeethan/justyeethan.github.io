@@ -81,11 +81,6 @@ const AboutPageStyles = styled.div`
       font-size: 3rem;
     }
   }
-
-  // >>>>>> Timeline of Experience >>>>>>>
-
-  // >>>>>>> End Timeline of Experience >>>>>>>
-
 `;
 
 export default function About() {
@@ -102,8 +97,8 @@ export default function About() {
           <div data-aos='fade-up' data-aos-delay='100' className="top-section">
             <div className="left">
               <p className="about__subheading">
-                Hi, I am <span>Ethan Yee</span>{" "}
-                <span className="language">(余泽恩)</span>
+                Hi, my name is <span>Ethan Yee</span>
+                <span>(余泽恩)</span>
               </p>
               <h2 className="about__heading">
                 Junior @ the University of Washington
