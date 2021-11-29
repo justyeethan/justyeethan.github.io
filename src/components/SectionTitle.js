@@ -38,7 +38,7 @@ export default function SectionTitle({
   }, []);
 
   return (
-    <SectionTitleStyle data-aos='fade-up' data-aos-delay='100' className="section-title">
+    <SectionTitleStyle data-aos='fade-up' data-aos-delay='500' className="section-title">
       <p>{subheading}</p>
       <h2>{heading}</h2>
     </SectionTitleStyle>

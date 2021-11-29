@@ -38,31 +38,31 @@ export default function ServicesSection() {
   }, []);
   return (
     <ServicesItemsStyles>
-      <div data-aos='fade-up' data-aos-delay='100' className="container">
+      <div data-aos='fade-up' data-aos-delay='500' className="container">
         <SectionTitle subheading="Specialties" heading="Skills" />
-        <div data-aos='fade-up' data-aos-delay='100' className="services__allItems">
+        <div className="services__allItems">
           <ServicesSectionItem
-            data-aos='fade-up'  data-aos-delay='100'
+            data-aos='fade-up'
             icon={<FontAwesomeIcon icon={faChartBar} size='5x' />}
             title="Data Visualization"
             desc="I build comprehensive charts and tables for large datasets and variables"
           />
           <ServicesSectionItem
-            data-aos='fade-up' data-aos-delay='100'
+            data-aos='fade-up'
             icon={<FontAwesomeIcon icon={faCode} size='5x' />}
             title="Web Development"
             desc="I can manage your entire website, using anything, from your front-end, to your
             lower level api."
           />
           <ServicesSectionItem
-            data-aos='fade-up' data-aos-delay='100'
+            data-aos='fade-up'
             icon={<FontAwesomeIcon icon={faRobot} size="5x" />}
             title="Machine Learning"
             desc="I have extensive experience with developing neural networks for computer vision,
             with supervised and unsupervised learning."
           />
         </div>
-        <div data-aos='fade-up' data-aos-delay='500' className="services__allItems">
+        <div data-aos='fade-up' data-aos-delay='1000' className="services__allItems">
           <ServicesSectionItem
             icon={<FontAwesomeIcon icon={faDatabase} size='5x' />}
             title="Database Management (SQL, NoSQL)"
@@ -82,7 +82,7 @@ export default function ServicesSection() {
             and I can deploy and maintain your server environments."
           />
         </div>
-        <div data-aos='fade-up' data-aos-delay='1000' className="services__allItems">
+        <div data-aos='fade-up' data-aos-delay='1500' className="services__allItems">
           <ServicesSectionItem
             icon={<FontAwesomeIcon icon={faPython} size='5x' />}
             title="Python"

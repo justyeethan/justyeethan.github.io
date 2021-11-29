@@ -32,7 +32,7 @@ export default function ContactBanner() {
     });
   }, []);
   return (
-    <ContactBannerStyles data-aos='fade-up' data-aos-delay='100'>
+    <ContactBannerStyles data-aos='fade-up' data-aos-delay='500'>
       <div className="container">
         <div className="contactBanner__wrapper">
           <PText>Interested in working together?</PText>

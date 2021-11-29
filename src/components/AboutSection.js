@@ -89,7 +89,7 @@ export default function AboutSection() {
     });
   }, []);
   return (
-    <AboutSectionStyles data-aos="fade-up" data-aos-delay='100'>
+    <AboutSectionStyles data-aos="fade-up" data-aos-delay='500'>
       <div className="container">
         <div className="aboutSection__left">
           <SectionTitle

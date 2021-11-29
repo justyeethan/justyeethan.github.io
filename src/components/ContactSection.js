@@ -63,7 +63,7 @@ export default function ContactSection() {
   }, []);
 
   return (
-    <ContactSectionStyle data-aos="fade-up" data-aos-delay='100'>
+    <ContactSectionStyle data-aos="fade-up" data-aos-delay='500'>
       <div className="container">
         <SectionTitle heading="contact" subheading="How to reach me" />
         <div className="contactSection__wrapper">

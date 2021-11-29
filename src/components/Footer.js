@@ -62,7 +62,7 @@ export default function Footer() {
     });
   }, []);
   return (
-    <FooterStyle data-aos='flip-left' data-aos-delay='100'>
+    <FooterStyle data-aos='flip-left' data-aos-delay='500'>
       <div className="container">
         <div className="footer__col1">
           <h1 className="footer__col1__title">Ethan Yee</h1>

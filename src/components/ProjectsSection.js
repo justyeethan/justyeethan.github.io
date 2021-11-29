@@ -73,7 +73,7 @@ export default function ProjectsSection() {
           subheading="Cool things I've done"
           heading="Projects"
         />
-        <div data-aos="fade-up" data-aos-delay='100' className="projects__allItems">
+        <div data-aos="fade-up" data-aos-delay='500' className="projects__allItems">
           <Swiper
             spaceBetween={30}
             slidesPerView={1}

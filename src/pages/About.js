@@ -94,7 +94,7 @@ export default function About() {
     <>
       <AboutPageStyles>
         <div className="container">
-          <div data-aos='fade-up' data-aos-delay='100' className="top-section">
+          <div data-aos='fade-up' data-aos-delay='300' className="top-section">
             <div className="left">
               <p className="about__subheading">
                 Hi, my name is <span>Ethan Yee</span>
@@ -132,7 +132,7 @@ export default function About() {
             </div>
           </div>
           <div className="about__info__items">
-            <div data-aos='fade-up' data-aos-delay='100' className="about__info__item">
+            <div data-aos='fade-up' data-aos-delay='300' className="about__info__item">
               <h1 className="about__info__heading">Education</h1>
 
               <AboutInfoItem
@@ -161,7 +161,7 @@ export default function About() {
                 ]}
               />
             </div>
-            <div data-aos='fade-up' data-aos-delay='100' className="about__info__item">
+            <div data-aos='fade-up' data-aos-delay='300' className="about__info__item">
               <h1 className="about__info__heading">My Skills</h1>
 
               <AboutInfoItem
@@ -186,7 +186,7 @@ export default function About() {
               />
             </div>
 
-              <h1 className="about__info__heading">Experience</h1>
+              <h1 data-aos='fade-up' data-aos-delay='300' className="about__info__heading">Experience</h1>
             <Experience />
           </div>
         </div>

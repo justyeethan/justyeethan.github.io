@@ -86,7 +86,7 @@ export default function Experience() {
   }, []);
   return (
     <ExperienceStyled>
-      <div data-aos='fade-up' data-aos-delay='100' className="timeline">
+      <div data-aos='fade-up' data-aos-delay='500' className="timeline">
         <ul>
           <li className="date">
             <span data-date="2019-01-01">

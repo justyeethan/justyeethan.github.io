@@ -112,11 +112,11 @@ export default function TestimonialsSection() {
     <TestimonialSectionStyles>
       <div className="container">
         <SectionTitle
-          data-aos="fade-up" data-aos-delay='100'
+          data-aos="fade-up" data-aos-delay='300'
           subheading="Hear from people I've worked with in the past"
           heading="Testimonials"
         />
-        <div data-aos="fade-up" className="testimonial__wrapper">
+        <div data-aos="fade-up" data-aos-delay='300' className="testimonial__wrapper">
           <SwitchTransition component={null}>
             <CSSTransition key={activeSlide.id} timeout={300} classNames="fade">
               <div className="testimonial__info">
