@@ -187,6 +187,7 @@ export default function About() {
             </div>
 
               <h1 data-aos='fade-up' data-aos-delay='300' className="about__info__heading">Experience</h1>
+              <br />
             <Experience />
           </div>
         </div>
