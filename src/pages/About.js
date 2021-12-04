@@ -117,12 +117,10 @@ export default function About() {
                   environmental efforts, and I someday want to use my skills to
                   help the environment the people who reside in it.
                   <br />
-                  <br />I am a big fan of statistics and machine learning, and I
+                  <br />I am a big fan of utilizing statistics and machine 
+                  learning to solve complicated and dynamic problems, and I
                   am always looking to learn more about the world of data
-                  science. improve my skills in data science and data analytics.
-                  I have a strong background in statistics and machine learning
-                  and am always looking to learn more about the world of data
-                  science.
+                  science by improving my skills in data science and data analytics.
                 </PText>
               </div>
                 <ResumeButton btnText="See Resume" />
