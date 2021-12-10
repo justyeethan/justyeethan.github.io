@@ -104,10 +104,6 @@ export default function Footer() {
             heading="Contact Info"
             links={[
               {
-                title: '+1 (425) 350-3819',
-                path: 'tel:425-350-3819',
-              },
-              {
                 title: 'theethan5753@gmail.com',
                 path: 'mailto:theethan5753@gmail.com',
               },

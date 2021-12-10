@@ -87,14 +87,14 @@ export default function About() {
   useEffect(() => {
     AOS.init({
       duration: 1000,
-      once: true
-      });
+      once: true,
+    });
   }, []);
   return (
     <>
       <AboutPageStyles>
         <div className="container">
-          <div data-aos='fade-up' data-aos-delay='300' className="top-section">
+          <div data-aos="fade-up" data-aos-delay="300" className="top-section">
             <div className="left">
               <p className="about__subheading">
                 Hi, my name is <span>Ethan Yee</span>
@@ -107,30 +107,36 @@ export default function About() {
                 <PText>
                   I was born in California, and raised in Seattle. I am a junior
                   studying Applied Computing (Computer Science) in Data Science
-                  at the University of Washington. I have always loved figuring
-                  out trends of data and how they can be used to make better
-                  decisions.
+                  at the University of Washington, Bothell campus. I have always
+                  loved figuring out trends of data and how they can be used to
+                  make better decisions in a data-driven world.
                   <br /> <br />
-                  I am currently working at Apple as an Intern working on data
-                  pipelines for Daisy, which is automated robot for recycling
-                  parts for iPhones. I have always loved working on
-                  environmental efforts, and I someday want to use my skills to
-                  help the environment the people who reside in it.
+                  I am currently working at Apple as an Engineering Intern
+                  working on data pipeline for Daisy, developing synthetic data
+                  for training Convolutional Neural Networks, and developing a
+                  fullstack application for WW Operations. I have always loved
+                  working on environmental efforts, and I someday want to use my
+                  skills in computer science and data science to ultimately help
+                  the environment and make technology easier to access.
                   <br />
-                  <br />I am a big fan of utilizing statistics and machine 
-                  learning to solve complicated and dynamic problems, and I
-                  am always looking to learn more about the world of data
-                  science by improving my skills in data science and data analytics.
+                  <br />I am a big fan of utilizing statistics and machine
+                  learning to solve complicated and dynamic problems, and I am
+                  always looking to learn more about the world of data science
+                  by improving my skills in data science and data analytics.
                 </PText>
               </div>
-                <ResumeButton btnText="See Resume" />
+              <ResumeButton btnText="See Resume" />
             </div>
             <div className="right">
               <img src={AboutImg} alt="me" />
             </div>
           </div>
           <div className="about__info__items">
-            <div data-aos='fade-up' data-aos-delay='300' className="about__info__item">
+            <div
+              data-aos="fade-up"
+              data-aos-delay="300"
+              className="about__info__item"
+            >
               <h1 className="about__info__heading">Education</h1>
 
               <AboutInfoItem
@@ -159,7 +165,11 @@ export default function About() {
                 ]}
               />
             </div>
-            <div data-aos='fade-up' data-aos-delay='300' className="about__info__item">
+            <div
+              data-aos="fade-up"
+              data-aos-delay="300"
+              className="about__info__item"
+            >
               <h1 className="about__info__heading">My Skills</h1>
 
               <AboutInfoItem
@@ -184,8 +194,14 @@ export default function About() {
               />
             </div>
 
-              <h1 data-aos='fade-up' data-aos-delay='300' className="about__info__heading">Experience</h1>
-              <br />
+            <h1
+              data-aos="fade-up"
+              data-aos-delay="300"
+              className="about__info__heading"
+            >
+              Experience
+            </h1>
+            <br />
             <Experience />
           </div>
         </div>

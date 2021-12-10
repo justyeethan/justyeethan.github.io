@@ -16,13 +16,6 @@ const experience = [
   },
   {
     id: uuidv4(),
-    date: "Jan. 2021 - Jun. 2021",
-    title: "Undergrad Research Assistant",
-    company: "Sensors, Energy, and Automation Laboratory",
-    desc: "Helped automate and create Machine learning bots to aid with laboratory processes and conducted research on AI and aided in Development Operations of the laboratory.",
-  },
-  {
-    id: uuidv4(),
     date: "Jan. 2021 - Apr. 2021",
     title: "Software Engineer Freelancer",
     company: "Self Employed",
@@ -30,10 +23,17 @@ const experience = [
   },
   {
     id: uuidv4(),
-    date: "Sep. 2020 - Jan. 2021",
-    title: "Fullstack Developer (Team Lead)",
+    date: "Sep. 2020 - Jun. 2021",
+    title: "Undergrad Research Assistant",
     company: "Sensors, Energy, and Automation Laboratory",
-    desc: "Responsible for leading other front-end and back-end developers in developing different websites using React.js, Node.js, and AWS Amplify.",
+    desc: "Helped automate and create Machine learning bots to aid with laboratory processes and conducted research on AI and aided in fullstack development of laboratory tools.",
+  },
+  {
+    id: uuidv4(),
+    date: "Sep. 2020 - Nov. 2020",
+    title: "Research Assistant",
+    company: "Stanford Artificial Intelligence Laboratory",
+    desc: "Oversaw the research and development of artificial intelligence models for the Stanford AI Laboratory, and developed key data pipelines for natural language processing.",
   },
   {
     id: uuidv4(),
@@ -59,8 +59,8 @@ const experience = [
   {
     id: uuidv4(),
     date: "Jun. 2019 - Mar. 2020",
-    title: "Student Assistant (Technical Support)",
-    company: "University of Washington",
+    title: "Student Assistant",
+    company: "University of Washington, Bothell",
     desc: "Helped manage and present data and information that would help with parking enforcement and analyzed millions of dollars worth of inventory using Python and Excel, while providing excellent customer service to students and staff.",
   },
 ];
