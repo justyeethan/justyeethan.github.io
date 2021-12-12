@@ -1,20 +1,21 @@
 {
   "files": {
-    "main.js": "/static/js/main.e33c6c45.chunk.js",
-    "main.js.map": "/static/js/main.e33c6c45.chunk.js.map",
+    "main.js": "/static/js/main.ee8bb6d6.chunk.js",
+    "main.js.map": "/static/js/main.ee8bb6d6.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.fb7fa0a0.js",
     "runtime-main.js.map": "/static/js/runtime-main.fb7fa0a0.js.map",
     "static/css/2.0e85bbce.chunk.css": "/static/css/2.0e85bbce.chunk.css",
-    "static/js/2.28ba0f33.chunk.js": "/static/js/2.28ba0f33.chunk.js",
-    "static/js/2.28ba0f33.chunk.js.map": "/static/js/2.28ba0f33.chunk.js.map",
+    "static/js/2.4c29a517.chunk.js": "/static/js/2.4c29a517.chunk.js",
+    "static/js/2.4c29a517.chunk.js.map": "/static/js/2.4c29a517.chunk.js.map",
     "index.html": "/index.html",
     "static/css/2.0e85bbce.chunk.css.map": "/static/css/2.0e85bbce.chunk.css.map",
-    "static/js/2.28ba0f33.chunk.js.LICENSE.txt": "/static/js/2.28ba0f33.chunk.js.LICENSE.txt",
+    "static/js/2.4c29a517.chunk.js.LICENSE.txt": "/static/js/2.4c29a517.chunk.js.LICENSE.txt",
     "static/media/Montserrat-Bold.079ca05d.ttf": "/static/media/Montserrat-Bold.079ca05d.ttf",
     "static/media/Montserrat-SemiBold.fa8441f3.ttf": "/static/media/Montserrat-SemiBold.fa8441f3.ttf",
     "static/media/Restaurant.e1da42bb.jpeg": "/static/media/Restaurant.e1da42bb.jpeg",
     "static/media/Resume.ef7820d2.pdf": "/static/media/Resume.ef7820d2.pdf",
     "static/media/RobotoMono-Regular.418a8f9f.ttf": "/static/media/RobotoMono-Regular.418a8f9f.ttf",
+    "static/media/SEALlogo.4b983b27.png": "/static/media/SEALlogo.4b983b27.png",
     "static/media/about-page-img.f1e77a74.jpg": "/static/media/about-page-img.f1e77a74.jpg",
     "static/media/about-sec-img.795376d7.jpg": "/static/media/about-sec-img.795376d7.jpg",
     "static/media/arch.cedb698f.jpeg": "/static/media/arch.cedb698f.jpeg",
@@ -34,7 +35,7 @@
   "entrypoints": [
     "static/js/runtime-main.fb7fa0a0.js",
     "static/css/2.0e85bbce.chunk.css",
-    "static/js/2.28ba0f33.chunk.js",
-    "static/js/main.e33c6c45.chunk.js"
+    "static/js/2.4c29a517.chunk.js",
+    "static/js/main.ee8bb6d6.chunk.js"
   ]
 }
