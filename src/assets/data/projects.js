@@ -7,7 +7,7 @@ import Spotify from "../images/spotify.jpeg";
 import Sudoku from "../images/sudoku.png";
 import Bitcoin from "../images/cointracker.jpg";
 import Food from "../images/food.png";
-import SAIL from "../images/SAIL.jpeg";
+import SAIL from "../images/SAILLab.jpeg";
 import Prosthetics from "../images/prosthetics.jpeg";
 
 const projects = [
