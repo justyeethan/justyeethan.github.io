@@ -2,7 +2,7 @@ import { React, useEffect } from "react";
 import styled from "styled-components";
 import PText from "../components/PText";
 import ResumeButton from "../components/resumeButton";
-import AboutImg from "../assets/images/about-page-img.jpg";
+import AboutImg from "../assets/images/about-page-img.png";
 import AboutInfoItem from "../components/AboutInfoItem";
 import ContactBanner from "../components/ContactBanner";
 import Experience from "../components/Experience";
